@@ -58,7 +58,7 @@ bool add_node(List * plist,char * name)
         return false;   
     }
     scan=plist->begin;
-    while(scan->next!=NULL)
+    while(scan!=NULL)
     {
         count+=1;
         before=scan;
@@ -78,6 +78,7 @@ void printall(List * plist)
 {
     Node * scan;
     scan=plist->begin;
+    printf("\n\nall names in List\n");
     while(scan!=NULL){
         printf("%s\n",scan->name);
         scan=scan->next;
