@@ -20,6 +20,21 @@ int main(void){
 }
 char *
 s_gets(char *st,int n)
+/*this functions reads string from stdin and stores it in first parameter (st) 
+and returns it  
+if it false it will return NULL 
+also, after read string from stdin 
+it searchs for '\n' character literal and replaces it with '\0'
+(replace "new line" with "end of string")
+
+(when will there be '\n' in the st? if the string input by stdin is not longer than the limit of fgets()
+then there will be '\n', otherwise, there will be no '\n' in st which means there is '\n' left in buffer
+and we need to clean the ramainder in the line and enter to next line)
+
+after that 
+it clean the stuff left in the buffer of this line
+*/
+
 {
     char * ret_val;
     char * find;
