@@ -2,6 +2,7 @@
     "files.associations": {
         "*html": "html",
         "**/templates/**/*.html": "django-html",
-        "cstdio": "c"
+        "cstdio": "c",
+        "stdlib.h": "c"
     }
 }
