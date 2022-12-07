@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
-#undef RAND_MAX
-#define RAND_MAX 100
+#include<time.h>
 
 int * one (int colume) {
-    #include <time.h>
-    #include <stdlib.h>
-    int arr[colume];
+    int * arr;
+    arr=(int*)malloc(colume*sizeof(int));
     srand(time(NULL));   // Initialization, should only be called once.
+
     for(int i=0;i<colume;i++)
     {
 

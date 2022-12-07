@@ -8,7 +8,7 @@ bool read(int * arr,int dimension,int colume,int row)
     {
         for(int i =0;i<colume;i++)
         {
-            printf("%d ",arr[i]);
+            printf("%d \n",arr[i]);
         }
     }
     else
